@@ -1,16 +1,85 @@
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.text-center {
+    text-align: center;
+    padding-top: 30px;
 }
 
-#directions-text {
+p {
+    margin: 50px;
+}
+
+.container {
+    width: 80%;
+}
+
+.col-4 {
+    width: 33.33%;
     text-align: center;
 }
 
-.icons {
-    margin-top: 10px;
-    display: inline-block;
-    position: relative;
-    height: 225px;
+.col-8 {
+    width: 66.66%;
+}
+
+.player1-w-l-t {
+    height: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.option {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 35px; 
+    padding: 0;
+    height: 40px;
+	text-align: center;
+    font-size: 18px;
+    border-style: solid;
+    border-color: lightblue;
+    border-bottom: none;
+}
+
+#rock-crush-sciss {
+    border-style: solid;
+    border-color: lightblue;
+}
+
+#rock {
+    text-align: left;
+    width: 140px;
+}
+
+#paper {
+    text-align: left;
+    width: 140px;
+}
+
+#scissors {
+    text-align: left;
+    width: 140px;
+}
+
+#lizard {
+    text-align: left;
+    width: 140px;
+}
+
+#spock {
+    text-align: center;
+    width: 140px;
+}
+
+.chatInput {
+    height: 80px;
+}
+
+#chat-send {
+    align-content: right;
 }
