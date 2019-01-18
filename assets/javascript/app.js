@@ -1,10 +1,10 @@
 var config = {
-  apiKey: "AIzaSyAslaCndOsIfhgdKULmFAOBeIsozPRylKw",
-  authDomain: "firstclassproject-36dd6.firebaseapp.com",
-  databaseURL: "https://firstclassproject-36dd6.firebaseio.com",
-  projectId: "firstclassproject-36dd6",
-  storageBucket: "firstclassproject-36dd6.appspot.com",
-  messagingSenderId: "160542958584"
+  apiKey: "AIzaSyAOWLSibzOYPHTIpcV0OVtpXsrDJkTTWoM",
+  authDomain: "rpsls-a2fba.firebaseapp.com",
+  databaseURL: "https://rpsls-a2fba.firebaseio.com",
+  projectId: "rpsls-a2fba",
+  storageBucket: "",
+  messagingSenderId: "553481429221"
 };
 
   firebase.initializeApp(config);
@@ -18,12 +18,15 @@ var player1 = null;
 var player2 = null;
 
 // Stores players' names
-
+var playerName1 = "";
+var playerName2 = "";
 
 // Stores player's name in browser
-
+var yourName = "";
 
 // Stores player's choice after button click
+var player1Choice = "";
+var player2Choice = "";
 
 
 // Tracks whos turn
@@ -35,19 +38,33 @@ database.ref().on("value", function(snapshot) {
 
 
 // If Firebase has a player 1 and player 2 stored (first case)
-
-
-// Set the variables for player 1/player 2 equal to the stored values in firebase.
+if (
+  snapshot.child("playerName1").exists() &&
+  snapshot.child("playerName2").exists()
+) {
+  playerName1 = snapshot.val().playerName1;
+  playerName2 = snapshot.val().playerName2;
+}
+console.log(playerName1);
+console.log(playerName2);
 
 
 // Change the HTML to reflect the stored values
+$("#playerOneName").text(playerName1);
+$("#playerTwoName").text(playerName2);
 
+
+// If any errors are experienced, log them to console.
+},
+function(errorObject) {
+  console.log("The read failed: " + errorObject.code);
+}
+);
 
 // When both players join, set player 1 as first turn - increase font size and change color (faded when not turn)
 
 
 // Grab Player 1's Choice
-
 
 // Grab Player 2's Choice
 

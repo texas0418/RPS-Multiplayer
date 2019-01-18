@@ -16,10 +16,6 @@ p {
     text-align: center;
 }
 
-.col-8 {
-    width: 66.66%;
-}
-
 .player1-w-l-t {
     height: 20px;
     padding-bottom: 20px;
@@ -33,6 +29,8 @@ h3 {
     padding: 0;
 }
 
+
+/* possible outcomes for RPSLS */
 .option {
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +49,8 @@ h3 {
     border-color: lightblue;
 }
 
+
+/* buttons */
 #rock {
     text-align: left;
     width: 140px;
@@ -76,10 +76,34 @@ h3 {
     width: 140px;
 }
 
+/* chat box and chat inputs */
+
 .chatInput {
     height: 80px;
 }
 
 #chat-send {
     align-content: right;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.chatDisplay {
+    border: black;
+}
+
+.form {
+    padding-top: 0;
+}
+
+
+/* click button and make slightly larger */
+.button {
+    transform: scale(1);
+}
+
+.button.animate {
+    transform: scale(1.1);
 }
